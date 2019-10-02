@@ -1,4 +1,4 @@
-package example
+package spike
 
 import org.scalatest._
 
