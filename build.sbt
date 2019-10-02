@@ -5,7 +5,7 @@ ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "com.example"
 ThisBuild / organizationName := "example"
 
-lazy val root = (project in file("."))
+lazy val spike = (project in file("."))
   .settings(
     name := "pdfbox-spike",
     libraryDependencies ++= Seq(
