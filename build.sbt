@@ -11,6 +11,7 @@ lazy val spike = (project in file("."))
     libraryDependencies ++= Seq(
       pdfBox,
       pdfBoxExamples,
+      commonsIO,
       scalaTest % Test
     )
   )
