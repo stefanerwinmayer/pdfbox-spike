@@ -5,4 +5,5 @@ object Dependencies {
   lazy val pdfBox = "org.apache.pdfbox" % "pdfbox" % "2.0.17"
   lazy val xmpBox = "org.apache.pdfbox" % "xmpbox" % "2.0.17"
   lazy val commonsIO = "commons-io" % "commons-io" % "2.6"
+  lazy val fs2 = "co.fs2" %% "fs2-core" % "1.0.4"
 }
