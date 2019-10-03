@@ -13,11 +13,11 @@ object Spike extends App {
 
   val dummyInputStream =
     FileUtils
-      .openInputStream(new File("./sample-pdfs/dummy.pdf"))
+      .openInputStream(new File("./samplePDFs/dummy.pdf"))
       .asInstanceOf[InputStream]
   val sampleInputStream =
     FileUtils
-      .openInputStream(new File("./sample-pdfs/sample.pdf"))
+      .openInputStream(new File("./samplePDFs/sample.pdf"))
       .asInstanceOf[InputStream]
   val mergedInputStream = (new PDFMergerExample).merge(
     List(dummyInputStream, sampleInputStream).asJava
