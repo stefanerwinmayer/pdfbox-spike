@@ -10,7 +10,7 @@ lazy val spike = (project in file("."))
     name := "pdfbox-spike",
     libraryDependencies ++= Seq(
       pdfBox,
-      pdfBoxExamples,
+      xmpBox,
       commonsIO,
       scalaTest % Test
     )

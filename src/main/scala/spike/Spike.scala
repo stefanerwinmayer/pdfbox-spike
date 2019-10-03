@@ -5,7 +5,6 @@ import java.io.{File, InputStream}
 import collection.JavaConverters._
 
 import org.apache.commons.io.FileUtils
-import org.apache.pdfbox.examples.util.PDFMergerExample
 
 object Spike extends App {
 
@@ -19,7 +18,7 @@ object Spike extends App {
     FileUtils
       .openInputStream(new File("./samplePDFs/sample.pdf"))
       .asInstanceOf[InputStream]
-  val mergedInputStream = (new PDFMergerExample).merge(
+  val mergedInputStream = (new PDFMerger).merge(
     List(dummyInputStream, sampleInputStream).asJava
   )
 
